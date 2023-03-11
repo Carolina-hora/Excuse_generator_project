@@ -5,7 +5,7 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
-window.onload = function() {
+window.onload = function excuseGenerator() {
   //write your code here
 
   let who = ["the rockstar neighbour", "the priest", "my boyfriend", "my bff"];
@@ -28,9 +28,7 @@ window.onload = function() {
   let excuse = document.querySelector("#excuse");
   excuse.innerHTML = `${selectedWho} ${selectedAction} ${selectedWhat} ${selectedWhen}`;
 
-  let button = addEventListener("click", function() {
-    document.getElementById("#myButton").innerHTML = location.reload();
-  });
+  return excuse;
   //console.log(button);
 
   //let button = document.getElementById("#myButton");
@@ -38,4 +36,8 @@ window.onload = function() {
   //button.onclick = excuse() // if excuse was a function!! ;
 };
 
-console.log("Hello Rigo from the console!");
+let button = document.querySelector("#myButton");
+button.addEventListener("click", () => {
+  location.reload();
+});
+<
