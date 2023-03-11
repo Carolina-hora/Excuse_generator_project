@@ -40,4 +40,3 @@ let button = document.querySelector("#myButton");
 button.addEventListener("click", () => {
   location.reload();
 });
-<
